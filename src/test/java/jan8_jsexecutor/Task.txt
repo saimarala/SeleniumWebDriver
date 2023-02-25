@@ -1,0 +1,22 @@
+Task 1- Open https://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html
+Type to text area and scroll using Actions class method 
+
+2- Perform right click on box (if box is present in frame then switch to frame) https://api.jquery.com/contextmenu/ using actions class
+	verify color as yellow after right click
+	
+3- Perform double click on box (if box is present in frame then switch to frame) https://api.jquery.com/dblclick/ using actions class
+	verify color as yellow after right click
+	
+4- Task for JS
+	Open Chrome using WebDriver
+	Navigate to https://ineuron-courses.vercel.app/ using JSExecutor (do not use get method or navigate().to method)
+	
+Rest Assured Playlist
+	Mukesh Otwani
+		https://www.youtube.com/watch?v=aqrxDxumKZQ&list=PL6flErFppaj08LFolWioWyjfSGtCWcvVp
+	Amod Mahajan
+		https://www.youtube.com/watch?v=0i_JoGD-z4Y&list=PL-a9eJ2NZlbT0Hoo_Hj43utwgq2VusPyN
+
+	
+	
+	

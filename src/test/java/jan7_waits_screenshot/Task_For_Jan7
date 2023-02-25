@@ -1,0 +1,21 @@
+1 - Open http://seleniumpractise.blogspot.com/2016/08/how-to-use-explicit-wait-in-selenium.html
+Click on timer
+Wait for text "WebDriver"
+Use 2 conditions of ExpectedCondition
+
+2- Create a method in Utility class named as "captureScreenshotOfWebElement"
+	will capture the screenshot of element
+	will store element screenshot in element screenshot folder
+	all screenshot should have date time stamp
+	
+	
+3- Explore AShot Lib to more screenshot features (not a selenium library)
+		https://github.com/pazone/ashot
+		
+
+4- Create a method in Utility class named as "waitForElement" (dont use any waits)
+	method should except locator and timeout in seconds
+	will wait until element is not enabled
+	add sleep of 1 second
+	handle all exception while retrying
+	http://seleniumpractise.blogspot.com/2016/09/how-to-work-with-disable-textbox-or.html

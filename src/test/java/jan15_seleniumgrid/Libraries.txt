@@ -1,0 +1,25 @@
+Testing framework
+	JUnit
+	TestNG
+
+Reading Excel
+	Apache POI
+	JExcel
+
+Faker - Fake Data	
+	
+Reporting
+	Extent Report
+	Allure Report
+	
+PDF
+	PDFBox
+
+SQL
+	JDBC
+
+API Framework
+RestAssured	
+
+
+

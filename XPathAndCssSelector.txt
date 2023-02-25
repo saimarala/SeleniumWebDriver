@@ -1,0 +1,351 @@
+XPath
+	Abs
+	Relative
+	Relative + Abs
+
+Relative
+//
+
+Syntax - finding element with tagname
+//tagname
+//a
+//img
+//input
+//select
+//span
+//*
+
+2- Finding element with single attribute and value
+	case sensitive
+	'' and "" allowed
+
+//tagname[@attribute='value']
+//input[@id='email1']
+//input[@id="email1"]
+//input[@placeholder="Email"]
+//input[@type="email"]
+//button[@type='submit']
+//button[@class='submit-btn']
+//input[@id='email1']
+
+3- Finding element with multiple attribute and value
+	//tagname[@attribute1='value1' and @attribute2='value2']
+	//input[@id="email1" and @placeholder='Email']
+			Or
+	//tagname[@attribute1='value1' or @attribute2='value2']
+	//input[@id="email1" or @placeholder='Email']
+
+4- Index Based XPath
+	(XPath)[index]
+	(//a)[0]
+
+5- contains function
+	//tagname[contains(@attribute,'value')]
+	//input[contains(@id,'email')]
+	//input[contains(@id,'m')]
+	//input[contains(@name,'password')]
+	//input[contains(@name,'pass')]
+	//a[contains(@href,'signup')]
+	//img[contains(@src,'facebook')]
+
+6- text() function
+	//tagname[text()='text to find']
+	//a[text()='Practise']
+	//*[text()='Practise']
+	//a[text()='New user? Signup']
+	//h2[text()='Connect with us']
+	//*[text()='Connect with us']
+
+7- text function with contains
+	//tagname[contains(text(),'text which you are looking for')]
+	//a[contains(text(),'New user')]
+	//a[contains(text(),'New')]
+
+
+What is the difference between
+		//a[text()='Practise']
+			vs
+		//a[normalize-space()='Practise']	
+
+
+<a href="asdas"> Click Here </a>
+
+//a[text()=' Click Here ']
+//a[contains(text(),'Click Here')]
+//a[normalize-space()='Click Here']
+
+
+
+
+/html/body/div[1]/div[2]/ul/li[1]/a/b
+
+Combination
+
+//ul[contains(@id,'mainMenu')]/li/a/b
+
+//ul[contains(@id,'mainMenu')]//b
+
+//ul[contains(@id,'mainMenu')]/b
+
+
+//table[@id='resultTable']/tbody/tr/td/a
+//table[@id='resultTable']//a
+
+//table[@id='resultTable']/tbody/tr/td/input[@type='checkbox']
+//table[@id='resultTable']//input[@type='checkbox']
+
+								XPath Axes for traver
+
+Syntax
+
+//XPath//following::tagname
+//XPath//preceding::tagname
+
+Match all elements after Ashwini
+//a[text()='Ashwini']//following::*
+
+Match all elements before Ashwini
+//a[text()='Ashwini']//preceding::*
+
+Match with first td  after Ashwini
+//a[text()='Ashwini']//following::td[1]
+
+Match with second td  after Ashwini
+//a[text()='Ashwini']//following::td[2]
+
+Match with third td  after Ashwini
+//a[text()='Ashwini']//following::td[3]
+
+Match with second input  before Ashwini
+//a[text()='Ashwini']//preceding::input[1]
+
+Find first dropdown after User Role
+//*[text()='User Role']//following::select[1]
+
+Find first input tag after User Confirm Password
+//*[text()='Confirm Password']//following::input[1]
+
+Find first dropdown after Status
+//*[text()='Status']//following::select[1]
+
+To reach parent node you parent::tagname or //..
+//a[text()='Ashwini']//parent::td
+//a[text()='Ashwini']//..
+
+To reach chid node 
+/
+//child::tagname
+
+								CSS Selector
+Text function is not present
+Traverse in back direction not allowed
+
+ID
+	#
+
+Class
+	.
+
+Contains
+	*
+
+Starts with
+	^
+
+Ends With
+	$
+
+Examples
+	#txtUsername
+	input#txtUsername
+
+
+Syntax
+	tagname[attribute='value']
+	input[name='txtUsername']
+			vs
+	//input[@name='txtUsername']
+
+input.button
+input[value='LOGIN']
+
+
+input[id*='Username']
+input[id$='Username']
+
+
+div#social-icons
+div[id='social-icons']
+
+
+div[id='social-icons'] a
+
+
+div[id='social-icons'] > a
+
+
+div[id='social-icons'] a:nth-child(2)
+div[id='social-icons'] a:first-child
+div[id='social-icons'] a:last-child
+div[id='social-icons'] a:nth-of-type(2)
+
+id=username
+id=user123
+
+
+Locators
+	id
+	name
+	className
+	linkText
+	partialLinkText
+	xpath
+	css
+	tagname
+
+Relative Locators In Selenium 4
+	
+
+//input[@aria-label='surname']
+
+
+//div[@id='dropdownGroup1']//div//ul/li/a
+
+//div[@id='dropdownGroup1']//a[text()='Bangalore']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
